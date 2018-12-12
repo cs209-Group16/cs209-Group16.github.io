@@ -1,0 +1,9 @@
+theme: jekyll-theme-cayman
+title: Group 16 Final Project
+description: Predicting Alzheimer's Disease
+baseurl:
+markdown: kramdown
+kramdown:
+    math_engine: mathjax
+    input: GFM
+    syntax_highlighter: rouge
