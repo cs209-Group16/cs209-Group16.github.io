@@ -1,21 +1,15 @@
 ---
 nav_include: 4
-title: Results
+title: Conclusions
 ---
 
-## Results
+## Conclusions
 
+In this project we have developed a model able to predict Alzheimer’s disease with a 87% accuracy based on a baseline set of tests and a second evaluation 12 months later. 
 
+In order to get there we had to get familiar with a vast amount of data and many new concepts. We started by attempting to obtain our own merged dataset because we believed on the one hand we would be more flexible, and on the other hand we would better understand the data we are working with. However, the size of the data, the variety of formats, and the level of time and understanding required made us go with the ADNI merged data set.  But at that time we had a good understanding of the data we were dealing with and we understood how strenuous this process can be for some datasets. Still a very important part of Data Science.
 
-```
-summary = pd.DataFrame({'Model':['Logistic','KNN','LDA','QDA',
-                                 'Decision Trees MaxDepth10','Random Forest','SVM','SVM-GridOptimized', 'Neural Network','UMAP'],
-                        'Performance':[logregcv_acc,knn_acc,LDA_acc,QDA_acc,clf10_acc,rf_model_acc,svc_acc,svc_grid_acc,NN_acc,'UMAP_svc_acc']})
-
-display(HTML(summary.to_html(index=False)))
-
-```
-
+After doing some standard preprocessing to the data we experimented with different models, including an unsupervised classification technique never seen in class: UMAP.  We concluded that Random Forest is the best model for predicting a correct diagnosis for patients.
 
 
 <table border="1" class="dataframe">
@@ -68,13 +62,3 @@ display(HTML(summary.to_html(index=False)))
     </tr>
   </tbody>
 </table>
-
-
-## Conclusions
-
-In this project we have developed a model able to predict Alzheimer’s disease with a 87% accuracy based on a baseline set of tests and a second evaluation 12 months later. 
-
-In order to get there we had to get familiar with a vast amount of data and many new concepts. We started by attempting to obtain our own merged dataset because we believed on the one hand we would be more flexible, and on the other hand we would better understand the data we are working with. However, the size of the data, the variety of formats, and the level of time and understanding required made us go with the ADNI merged data set.  But at that time we had a good understanding of the data we were dealing with and we understood how strenuous this process can be for some datasets. Still a very important part of Data Science.
-
-After doing some standard preprocessing to the data we experimented with different models, including an unsupervised classification technique never seen in class: UMAP.  We concluded that Random Forest is the best model for predicting a correct diagnosis for patients.
-
