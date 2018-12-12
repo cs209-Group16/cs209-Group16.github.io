@@ -1,6 +1,6 @@
-theme: jekyll-theme-primer
-title: Support Vector Olives
-description: Keeping Italian Olives Pure!
+theme: jekyll-theme-cayman
+title: Group 16 Final Project
+description: Predicting Alzheimer's Disease
 baseurl:
 markdown: kramdown
 kramdown:
