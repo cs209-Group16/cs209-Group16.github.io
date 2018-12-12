@@ -1,3 +1,7 @@
+---
+nav_include: 2
+title: EDA
+---
 
 ## Exploratory Data Analysis (EDA)
 
